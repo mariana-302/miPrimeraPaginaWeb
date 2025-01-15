@@ -1,0 +1,48 @@
+.header {
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.header h1 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.gatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.gatos img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.gatos ul {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    list-style-type: none; /* Quita los puntos */
+    padding: 0;
+    width: 100%; /* Asegura que el ul ocupe todo el ancho del contenedor */
+}
+
+.gatos ul li {
+    flex: 1 1 25%; /* Cada columna ocupa el 25% del ancho */
+    break-inside: avoid;
+    text-align: center; /* Centra el contenido de cada columna */
+}
